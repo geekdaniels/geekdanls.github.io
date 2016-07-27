@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+
+<head>
+ <title>Nacoss Acu</title>
+ <link rel="icon" type="image/png" href="img/logo_4home.png">
+ <meta charset="utf-8">
+ <meta name="description" content="Nacoss chapter of Ajayi Crowther University">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- === Scripts -- === -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+ 
+<!--- Style Sheet -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+ 
+<link rel="stylesheet" href="css/slidebars.css" type="text/css">
+ 
+<link rel="stylesheet" href="dist/style.css">
+<link rel="stylesheet" type="text/css" href="css/home.css"/>
+
+
+<style type="text/css">  
+  @media(min-width:770px) {
+   .navigation {
+   }
+  
+   #img2,
+   #img3 {
+    display: none;
+   }
+ 
+  }
+/*html,body {
+	margin: 0;
+	padding: 0;
+}*/
+ 
+ 
+.slider {
+    width: 72.8%;
+	/*width: 1024px;*/
+	margin: auto;
+    border-left: 3px solid #e09b0f;
+    border-right: 3px solid #e09b0f;
+    border-bottom: 3px solid #e09b0f;
+	
+}
+
+.slider-wrapper {
+	width: 100%;
+	height: 220px;
+	position: relative;
+}
+
+.slide {
+	float: left;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+ 
+
+ /* =================== mobile spec for 320px ================== */
+   @media (max-width: 320px) {
+            .navigation {
+                display: none;
+            }
+    
+           .slider{
+         width: 98%;
+            height: 130px;
+}     
+    .slide {
+	height: 130px;
+}
+        .wrap {
+	width: 96.2%;
+}
+    
+    .newsbits {
+	text-align: center;
+}
+    
+            .art1 {
+	     float: none;
+         width: 100%;
+}
+        
+        .art2 {
+	float: none;
+     width: 100%;
+     margin-top: 15px;
+     margin-left: 0%;
+}
+        
+        .art3 {
+	float: none;
+    width: 100%;
+    margin-left: 0%;
+}
+    
+    .news{
+     float: none;
+     width: 100%;
+     margin-top: 800px;
+    }
+    
+    .news1 {
+	float: none;
+     width: 100%;
+     margin-left: 0px;
+}
+    .news2{
+     float: none;
+     width: 100%;
+     height: 440px;
+     margin-left: 0px;
+    }
+    
+    .news4{
+     float: none;
+     width: 100%;
+    }
+    
+    .news5 {
+	float: none;
+     width: 100%;
+     margin-left: 0px;
+}
+            #unusedl {
+                margin-left: 1px;
+            }
+            #wrapper {
+                width: 100%;
+                margin-left: 0px;
+            }
+           
+        }
+ 
+ 
+  /* ============= Mmobile styling from 320px Upwards ================*/
+ 
+ @media (min-width: 321px) and (max-width: 400px) {
+            .navigation  {
+                display: none;
+            }
+  
+  
+        .navigation {
+	width: 100%;
+}
+  
+  .contwrap {
+	margin-top: 20px;
+}
+  
+  .slider{
+         width: 95%;
+            height: 130px;
+}     
+    .slide {
+	height: 130px;
+}
+        .wrap {
+	width: 96%;
+         margin-left: 5px;
+}
+    
+    .newsbits {
+	text-align: center;
+}
+    
+            .art1 {
+	     float: none;
+         width: 100%;
+             margin-left: 3px;
+}
+        
+        .art2 {
+	float: none;
+     width: 100%;
+}
+        
+        .art3 {
+	float: none;
+         width: 100%;
+}
+    
+    .news{
+     float: none;
+     width: 99%;
+     margin-top: 800px;
+    }
+    
+    .news1 {
+	float: none;
+     width: 99%;
+     margin-left: 0px;
+}
+    .news2{
+     float: none;
+     width: 99%;
+     height: 425px;
+     margin-left: 0px;
+    }
+    
+    .news4{
+     float: none;
+     width: 99%;
+    }
+    
+    .news5 {
+	float: none;
+     width: 99%;
+     margin-left: 0px;
+  }
+  
+                #unusedl {
+                    margin-left: 29px;
+                }
+                
+            }
+ 
+ @media (min-width:401px) and (max-width:440px){
+     
+  
+  .navigation {
+                display: none;
+            }
+  
+  div ul li a{
+            display: block;
+    color: white;
+/*    text-align: center;*/
+    padding: 10px 16px;
+    text-decoration: none;
+/*    font-family: sans-serif;*/
+    font-size: 20px;
+}
+
+              #unusedl {
+                margin-left: 37px;
+            }
+  
+        .navigation {
+	width: 100%;
+}
+  
+  .contwrap {
+	margin-top: 35.5px;
+}
+  
+  .slider{
+         width: 95%;
+            height: 130px;
+}     
+    .slide {
+	height: 130px;
+}
+        .wrap {
+	width: 96%;
+         margin-left: 5px;
+}
+    
+    .newsbits {
+	text-align: center;
+}
+    
+            .art1 {
+	     float: none;
+         width: 100%;
+}
+        
+        .art2 {
+	float: none;
+     width: 100%;
+}
+        
+        .art3 {
+	float: none;
+         width: 100%;
+}
+    
+    .news{
+     float: none;
+     width: 99%;
+     margin-top: 800px;
+    }
+    
+    .news1 {
+	float: none;
+     width: 99%;
+     margin-left: 0px;
+}
+    .news2{
+     float: none;
+     width: 99%;
+     height: 425px;
+     margin-left: 0px;
+    }
+    
+    .news4{
+     float: none;
+     width: 99%;
+    }
+    
+    .news5 {
+	float: none;
+     width: 99%;
+     margin-left: 0px;
+}
+
+  
+ }
+ 
+ @media (min-width:441px) and (max-width:766px)
+ {
+  .navigation {
+	display: none;
+}
+  
+  div ul li a{
+            display: block;
+    color: white;
+/*    text-align: center;*/
+    padding: 10px 16px;
+    text-decoration: none;
+/*    font-family: sans-serif;*/
+    font-size: 100%;
+}
+
+              #unusedl {
+                margin-left: 45px;
+            }
+  
+        .navigation {
+	width: 100%;
+}
+  
+  .contwrap {
+	margin-top: 13%;
+}
+    .slider{
+         width: 95%;
+            height: 130px;
+}     
+    .slide {
+	height: 130px;
+}
+        .wrap {
+	width: 96%;
+         margin-left: 5px;
+}
+    
+    .newsbits {
+	text-align: center;
+}
+    
+            .art1 {
+	     float: none;
+         width: 100%;
+}
+        
+        .art2 {
+	float: none;
+     width: 100%;
+}
+        
+        .art3 {
+	float: none;
+         width: 100%;
+}
+    
+    .news{
+     float: none;
+     width: 99%;
+     margin-top: 800px;
+    }
+    
+    .news1 {
+	float: none;
+     width: 99%;
+     margin-left: 0px;
+}
+    .news2{
+     float: none;
+     width: 99%;
+     height: 425px;
+     margin-left: 0px;
+    }
+    
+    .news4{
+     float: none;
+     width: 99%;
+    }
+    
+    .news5 {
+	float: none;
+     width: 99%;
+     margin-left: 0px;
+}
+ }
+ 
+ /* Mobile spec for Ipad====================*/       
+       @media (width:768px){
+  
+        body{
+         width: 100%
+        }
+        
+        
+        .navigation {
+	width: 100%;
+         display: none;
+}
+        
+        
+        
+        .contwrap {
+/*	margin-top: 126px;*/
+      
+}
+        
+        .slider{
+         width: 97%;
+}     
+        .wrap {
+	width: 98%;
+}
+        
+        
+           #img1,#img2{
+	display: none;
+}
+           
+            div ul{
+            list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #223174
+        }
+        
+        div li {
+            float: left;
+            
+        }
+        
+        div ul li a{
+            display: block;
+    color: white;
+/*    text-align: center;*/
+    padding: 10px 35px;
+    text-decoration: none;
+/*    font-family: sans-serif;*/
+    font-size: 180%;
+}
+        
+        #unusedl{
+         margin-left: 55px;
+}
+        
+       
+                
+        .news{
+/*         margin-top: 80px;*/
+        }
+        
+        .news1{
+/*         margin-top: 80px;*/
+         margin-left: 8px
+        }
+        
+        .news2 {
+/*         margin-top: 80px;*/
+         height: 440px
+
+}
+        
+        .news4{
+        height: 220px; 
+        }
+        
+        .vote1 {
+	height: 110px;
+}
+        
+        .news5{
+         margin-left: 8px;
+         height: 220px;
+        }
+        
+       }
+ 
+ @media(min-width:770px){
+  .navbar{
+         display: none;
+        }
+  
+  #sb-site {
+	margin-top: 63px;
+}
+ }
+
+
+</style>
+
+</head>
+
+<body ng-controller="mainController">
+ <!-- Header Section ============ -->
+        <div class="navigation">
+
+        <div id="div" ><img id="img1" src="img/221.jpg">
+         </div>
+
+        <!--Navigation Bar-->
+
+            <div class="myNav" style="pointer-events: auto;">
+               <ul style="pointer-events: auto;">
+               <li style="pointer-events: auto;"><a class="active" id="unusedl" href="#home"><b>Home</b></a>
+               </li>
+               <li><a href="#about"><b>About</b></a>
+               </li>
+               <li><a href="#resources"><b>Resources</b></a>
+               </li>
+               <li><a href="#blog"><b>Blog</b></a>
+               </li>
+
+               </ul>
+            </div>
+        </div>
+ 
+ 
+ <nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
+ 
+  			<!-- Left Control -->
+  			<div class="sb-toggle-left ">
+  				<div class="navicon-line"></div>
+  				<div class="navicon-line"></div>
+  				<div class="navicon-line"></div>
+  			</div>
+         <div class="containersl">
+  			  <!-- Logo -->
+				<div id="logo" class="navbar-left">
+					<a href="#"><img src="img/ne.jpg" width="" height="48"></a>
+				</div>
+			</div>
+      </nav>
+      
+      
+ 
+
+ <!-- ============ Whole Content Section ============ -->
+<div id="sb-site">
+<div ng-view>
+ 
+</div>
+       
+
+        </div>
+
+<!-- ======The left slider ====== --> 
+ <div class="sb-slidebar sb-left">
+	<nav>
+		<ul class="sb-menu">
+			<li><img src="img/ipad.jpg" alt="Slidebars" width="86.5%" height="60"></li>
+			<li class="sb-close"><a href="http://plugins.adchsm.me/slidebars/">Home</a></li>
+			<li class="sb-close"><a href="#">About</a></li>
+			<li class="sb-close"><a href="#">Resources</a></li>
+			<li class="sb-close"><a href="http://plugins.adchsm.me/slidebars/usage.php#api">Blog</a></li>
+			<li class="sb-close"><a href="http://plugins.adchsm.me/slidebars/usage.php#api">Student Portal</a></li>
+			
+			
+					
+			<li class="sb-close"><small>© 2016 Acu Nacoss Chapter</small></li>
+		</ul>
+	</nav>
+</div>
+ <script type="text/javascript" src="angularscript.js"></script>
+        <!-- Slidebars -->
+
+    <script src="dist/slidebars.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+        });
+      }) (jQuery);
+</script>
+
+ 
+
+</body>
+
+</html>
